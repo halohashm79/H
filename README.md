@@ -1,4 +1,4 @@
-#scan sub domain 
+### scan sub domain 
 >tool automatic
 ```
 subfinder -d example.com >res.txt
