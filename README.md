@@ -115,6 +115,10 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 > error reuslt
 ```
 '
+~`
+///'
+//'
+////'
 "
 `
 ')
@@ -138,8 +142,10 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 /*
 %23
 %2323
+;%00
 %00
-%60
+;%60
+;%60
 ;%00
 ```
 >next order by
