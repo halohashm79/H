@@ -109,6 +109,11 @@ site:exam.com php?q=
 ```
 cat url.txt|gf sqli | tee sql.txt
 ```
+> web scan
+```
+https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-online
+```
+
 
 
 
