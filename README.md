@@ -12,3 +12,7 @@ gobuster dns -d example.com -w wordlits.txt
 ```
 httpx -l res.txt -o res2.txt
 ```
+
+>next step install tool 
+* [subzy](https://github.com/PentestPad/subzy)
+
