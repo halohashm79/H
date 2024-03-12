@@ -20,3 +20,7 @@ httpx -l res.txt -o res2.txt
 subzy run --targets res2.txt > res3.txt
 
 ```
+
+### scan parampeter
+> tool automatic
+
