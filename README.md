@@ -3,7 +3,9 @@
 - [recon step 1 ](#recon)
 - 
 - [automatic scan](#automatic).
-  
+
+-- [sql scan  ](#SqlScan )
+
 
 
 
@@ -93,5 +95,20 @@ searchsploit example
 > tool df list
 
 # the end 
+
+
+### SqlScan
+
+>google dorking
+```
+site:exam.com id=
+site:exam.com php?q=
+
+```
+> gf --list
+```
+cat url.txt|gf sqli | tee sql.txt
+```
+
 
 
