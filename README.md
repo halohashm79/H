@@ -22,5 +22,8 @@ subzy run --targets res2.txt > res3.txt
 ```
 
 ### scan parampeter
-> tool automatic
+> old parameter ,1-gau 
+```
+cat res3.txt |gau |tee res4.txt
+```
 
