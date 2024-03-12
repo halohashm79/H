@@ -31,6 +31,13 @@ cat res3.txt |gau |tee res4.txt
 paramspider -l domains.txt
 paramspider -d exam.com
 ```
+> new parampeter
+```
+ffuf -u exam.com/FUZZ.php -w wordlist.txt
+
+dirsearch -u exam.com 
+```
+
 
 
 
