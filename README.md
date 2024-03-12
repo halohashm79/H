@@ -23,6 +23,7 @@ subzy run --targets res2.txt > res3.txt
 
 ### scan parampeter
 > old parameter ,1-gau 2-paramspider
+* [gau](https://github.com/lc/gau)
 ```
 cat res3.txt |gau |tee res4.txt
 ```
