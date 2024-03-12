@@ -1,6 +1,9 @@
 ## Summary
 
 - [recon step 1 ](#recon)
+- 
+- [automatic scan](#automatic).
+  
 
 
 
@@ -52,6 +55,8 @@ dirsearch -u exam.com
 * Use wordlists of common parameters and send them, look for unexpected behavior from the backend. 
     ```ps1
     x8 -u "https://example.com/" -w <wordlist>
+    
+
     x8 -u "https://example.com/" -X POST -w <wordlist>
     ```
 
@@ -60,6 +65,17 @@ dirsearch -u exam.com
 arjun -d example.com
 ```
 ### the end 
+
+
+
+
+
+#automatic
+>tool all scan
+```
+nuclei -u example.com
+```
+
 
 
 
