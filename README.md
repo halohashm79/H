@@ -15,4 +15,7 @@ httpx -l res.txt -o res2.txt
 
 >next step install tool 
 * [subzy](https://github.com/PentestPad/subzy)
-
+>next
+```
+subzy run --targets res2.txt
+```
