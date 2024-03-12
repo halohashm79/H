@@ -22,8 +22,15 @@ subzy run --targets res2.txt > res3.txt
 ```
 
 ### scan parampeter
-> old parameter ,1-gau 
+> old parameter ,1-gau 2-paramspider
 ```
 cat res3.txt |gau |tee res4.txt
 ```
+>next 
+```
+paramspider -l domains.txt
+paramspider -d exam.com
+```
+
+
 
