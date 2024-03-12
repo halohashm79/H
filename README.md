@@ -38,6 +38,14 @@ ffuf -u exam.com/FUZZ.php -w wordlist.txt
 
 dirsearch -u exam.com 
 ```
+### Bruteforce parameters
+* [Sh1Yo/x8](https://github.com/Sh1Yo/x8) 
+
+* Use wordlists of common parameters and send them, look for unexpected behavior from the backend. 
+    ```ps1
+    x8 -u "https://example.com/" -w <wordlist>
+    x8 -u "https://example.com/" -X POST -w <wordlist>
+    ```
 
 
 
