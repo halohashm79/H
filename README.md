@@ -113,7 +113,36 @@ cat url.txt|gf sqli | tee sql.txt
 ```
 https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-online
 ```
-
+> error reuslt
+```
+'
+"
+`
+')
+")
+`)
+'))
+"))
+`))
+```
+>balance url
+```
+--+-
+--+
+)--+-
+))--+-
+--
+--+
+)--
+))--
+-- -/*
+/*
+%23
+%2323
+%00
+%60
+;%00
+```
 
 
 
