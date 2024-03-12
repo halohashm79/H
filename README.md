@@ -344,8 +344,13 @@ sqlmap -u exam.com/?q=1 --crawel 2 --batch
 ```
 sqlmap -r file.txt --risk=3 --level=5 --batch 
 ```
+>more sqlmap
 
+[advancesqlmap](https://muhdaffa.medium.com/tips-and-tricks-for-effective-sql-injection-testing-using-sqlmap-tamper-scripts-ed4bfa5717e7?source=rss------bug_bounty-5)
 
+[hacksql](https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap)
 
+*[sqlmapmore](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/@cuncis/the-ultimate-sqlmap-tutorial-master-sql-injection-and-vulnerability-assessment-4babdc978e7d&ved=2ahUKEwjMq_DLtu-EAxWoSfEDHdHMCxEQjjh6BAgjEAE&usg=AOvVaw0tXqR_b0UWLkd3QVLl6ddw)
 
+#the end
 
