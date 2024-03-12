@@ -1,27 +1,35 @@
-### scan sub domain 
+## Summary
+
+- [recon step 1 ](#recon)
+
+
+
+  ### recon
 >tool subfinder automatic 
 ```
 subfinder -d example.com >res.txt
 ```
->gobuster for wordlists
+> using gobuster for wordlists
 ```
 gobuster dns -d example.com -w wordlits.txt
 ```
-### passive scan httpx
-> httpx
+>next
+> passive scan httpx
+
 ```
 httpx -l res.txt -o res2.txt
 ```
 
->next step install tool 
+> next step install tool 
 * [subzy](https://github.com/PentestPad/subzy)
->next
+> next
+
 ```
 subzy run --targets res2.txt > res3.txt
 
 ```
 
-### scan parampeter
+>scan parampeter
 > old parameter ,1-gau 2-paramspider
 * [gau](https://github.com/lc/gau)
 ```
@@ -38,7 +46,7 @@ ffuf -u exam.com/FUZZ.php -w wordlist.txt
 
 dirsearch -u exam.com 
 ```
-### Bruteforce parameters
+> Bruteforce parameters
 * [Sh1Yo/x8](https://github.com/Sh1Yo/x8) 
 
 * Use wordlists of common parameters and send them, look for unexpected behavior from the backend. 
