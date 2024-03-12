@@ -7,4 +7,8 @@ subfinder -d example.com >res.txt
 ```
 gobuster dns -d example.com -w wordlits.txt
 ```
-
+### passive scan httpx
+> httpx
+```
+httpx -l res.txt -o res2.txt
+```
