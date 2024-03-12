@@ -298,6 +298,18 @@ now()
 @@log_error
 @@GLOBAL.have_symlink
 ```
+>tool automatic
+
+```
+sqlmap -u exam.com/?q=1
+sqlmap -u exam.com/?q=1 --crawel 2 --batch
+```
+>sqlmap advance
+```
+sqlmap -r file.txt --risk=3 --level=5 --batch 
+```
+
+
 
 
 
