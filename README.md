@@ -47,6 +47,9 @@ dirsearch -u exam.com
     x8 -u "https://example.com/" -X POST -w <wordlist>
     ```
 
-
+> arjun
+```  
+arjun -d example.com
+```
 
 
