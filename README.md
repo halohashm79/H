@@ -87,6 +87,11 @@ whatweb example.com
 ```
 searchsploit example
 ```
+>next
+```nikto -h example.com
+```
+> tool df list
+
 # the end 
 
 
