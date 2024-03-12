@@ -83,6 +83,10 @@ nmap -A -O example.com
 ```
 whatweb example.com
 ``` 
+>next
+```
+searchsploit example
+```
 
 
 
