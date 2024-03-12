@@ -70,12 +70,19 @@ arjun -d example.com
 
 
 
-#automatic
+### automatic
 >tool all scan
 ```
 nuclei -u example.com
 ```
-
+>next
+```
+nmap -A -O example.com
+```
+> next
+```
+whatweb example.com
+``` 
 
 
 
