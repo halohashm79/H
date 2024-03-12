@@ -3,7 +3,6 @@
 - [recon step 1 ](#recon)
 - 
 - [automatic scan](#automatic).
-- 
  --[sql scan  ](#SqlScan )
 
 
@@ -110,7 +109,10 @@ site:exam.com php?q=
 cat url.txt|gf sqli | tee sql.txt
 ```
 > web scan
+
 *.[web](https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-online)
+>
+> 
 > error reuslt
 ```
 1234'%2F%2A%2A%2FAnd%2F%2A%2A%2F%0Asleep(5)
