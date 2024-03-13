@@ -1,6 +1,7 @@
 ## Summary
 
 - [recon step 1 ](#recon)
+- [waf](#waf)
 - 
 - [automatic scan](#automatic).
 - [sql scan  ](#SqlScan )
@@ -576,5 +577,10 @@ shhortlink web scan
 payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 
 ```
-
+### waf
+>website
+[url encode](https://amp.urlencoder.org/)
+>[base64 encode](https://www.base64decode.org/)
+>[sheif ](https://cyberchef.io/)
+>[github waf](https://github.com/0xInfection/Awesome-WAF)
 
