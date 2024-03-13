@@ -4,7 +4,7 @@
 - 
 - [automatic scan](#automatic).
 - [sql scan  ](#SqlScan )
-- [lfi] (#lfi).
+- [lfi](#lfi).
 
 
 
