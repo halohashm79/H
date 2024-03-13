@@ -406,7 +406,7 @@ python lfi.py
 [lfi scan all](https://github.com/Chocapikk/LFIHunt)
 >
 
->lfi to rce
+># lfi to rce
 > /proc/self/environ
 ```
 filename=../../../proc/self/environ HTTP/1.1
