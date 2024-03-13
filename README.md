@@ -2,7 +2,6 @@
 
 - [recon step 1 ](#recon)
 - [waf](#waf)
-- 
 - [automatic scan](#automatic).
 - [sql scan  ](#SqlScan )
 - [lfi](#lfi).
