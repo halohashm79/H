@@ -876,7 +876,29 @@ Content-Type: application/x-php
 # the end 
 
 ### xss
+-tool 
+[xsstrike to find common source ](https://github.com/s0md3v/XSStrike) 
+>-
+>[dalfox](https://github.com/hahwul/dalfox)
+>
+>
 >-commom source view
+```
+document.URL
+document.documentURI
+document.URLUnencoded
+document.baseURI
+location
+document.cookie
+document.referrer
+window.name
+history.pushState
+history.replaceState
+localStorage
+sessionStorage
+IndexedDB (mozIndexedDB, webkitIndexedDB, msIndexedDB)
+Database
+```
 
 
 > payalod xss tosinks
