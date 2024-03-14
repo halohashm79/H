@@ -569,6 +569,15 @@ to page=zip://tmp/upload/1SZbCGZYs.jpg%23r&c=pwd
 
 
 ### openRedict
+>How To Bypass
+Use `@`
+```
+https://testvuln.com/login?next=https://vuln.me@evit.com
+```
+# xsstoopenredic
+```
+<a href=http://evil.com>sumit/ your report here </a>
+```
 >parampter
 
 ```
