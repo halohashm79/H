@@ -874,6 +874,10 @@ Content-Type: application/x-php
 
 ------abcdefghijk
 ```
+
+>and hex to png bypass
+>add
+89 50 4E 47 0D 0A 1A 0A
 # the end 
 
 ### xss
