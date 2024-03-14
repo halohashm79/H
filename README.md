@@ -707,6 +707,11 @@ url=https://github.com/mIcHyAmRaNe/wso-webshell/blob/master/wso.php
 ```
 payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 ```
+>next
+# Full Account Takeover via Open Redirection link below
+-[youtube ](https://youtu.be/8q5FAFAhFKE?si=xlwGno_SlaYrC3P5)
+
+# the end
 ### waf
 >website
 >
