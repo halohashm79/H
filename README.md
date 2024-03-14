@@ -103,6 +103,8 @@ searchsploit example
 
 >google dorking
 >tool scan sqlmap and ghuari
+>
+>
 [ghuari](https://github.com/r0oth3x49/ghauri)
 ```
 site:exam.com id=
