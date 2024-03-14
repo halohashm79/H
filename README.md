@@ -23,6 +23,7 @@ gobuster dns -d example.com -w wordlits.txt
 
 ```
 httpx -l res.txt -o res2.txt
+cat res.txt |httpx-toolkit
 ```
 
 > next step install tool 
