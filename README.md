@@ -877,7 +877,12 @@ Content-Type: application/x-php
 
 >and hex to png bypass
 >add
+```
 89 50 4E 47 0D 0A 1A 0A
+```
+# shell wget 
+-
+-[shell](https://github.com/22XploiterCrew-Team/Gel4y-Mini-Shell-Backdoor)
 # the end 
 
 ### xss
