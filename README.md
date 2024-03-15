@@ -8,6 +8,7 @@
 - [open redirect](#openRedict)
 - [shell upload](#shellupload)
 - [xss](#xss)
+- [cros](#cros)
 
 
 
@@ -28,13 +29,22 @@ httpx -l res.txt -o res2.txt
 cat res.txt |httpx-toolkit
 ```
 
-> next step install tool 
+> #### take sub domain 
 * [subzy](https://github.com/PentestPad/subzy)
-> next
+>next 
 
 ```
 subzy run --targets res2.txt > res3.txt
 
+```
+->
+-### cros
+->[crosy](https://github.com/s0md3v/Corsy)
+->
+```
+cat urls.txt | python3 corsy.py
+
+python3 corsy.py -u https://example.com/
 ```
 
 >scan parampeter
