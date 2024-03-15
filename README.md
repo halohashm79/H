@@ -47,6 +47,10 @@ cat urls.txt | python3 corsy.py
 
 python3 corsy.py -u https://example.com/
 ```
+-and payalod cros
+*.[crospayalor](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/CORSMisconfiguration/README.md)
+
+-
 
 >scan parampeter
 > old parameter ,1-gau 2-paramspider
