@@ -9,6 +9,7 @@
 - [shell upload](#shellupload)
 - [xss](#xss)
 - [cros](#cros)
+- [take sub domain](#takeSub)
 
 
 
@@ -29,7 +30,7 @@ httpx -l res.txt -o res2.txt
 cat res.txt |httpx-toolkit
 ```
 
-> #### take sub domain 
+> #### takeSub 
 * [subzy](https://github.com/PentestPad/subzy)
 >next 
 
@@ -38,7 +39,7 @@ subzy run --targets res2.txt > res3.txt
 
 ```
 ->
--### cros
+### cros
 ->[crosy](https://github.com/s0md3v/Corsy)
 ->
 ```
