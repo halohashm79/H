@@ -132,6 +132,10 @@ cat url.txt|gf sqli | tee sql.txt
 
 *.[web](https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-online)
 >
+>benefits for upload
+-[mysql-webshell](https://github.com/stevemcilwain/secrets/blob/master/mysql-webshell.md)
+>
+>
 > 
 > error reuslt
 ```
