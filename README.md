@@ -10,6 +10,8 @@
 - [xss](#xss)
 - [cros](#cros)
 - [take sub domain](#takeSub)
+- [Ssrf](#ssrf)
+- 
 
 
 
@@ -1122,6 +1124,15 @@ python3 -m http.server -m 80
 X-Forwarded-For: 1.1.1.1
 
 ```
+# the end
+
+-
+### ssrf 
+-tool install 
+
+[ssrfmap](https://github.com/swisskyrepo/SSRFmap)
+
+-and google dork( pdf_path=)
 
 
 
