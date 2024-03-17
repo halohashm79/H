@@ -1173,6 +1173,8 @@ refer:https://exam.com</script>
 ### xxe
 -payalod github[pay](https://github.com/GoSecure/dtd-finder/tree/master/list)
 
+-halo [payalodmore](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXEInjection/README.md)
+
 ->
 -youtube example xxe to(lfi) to rce
 -link[youtube](https://youtu.be/Gz4iPauycKs?si=kIztGowwNeGQbW9f)
