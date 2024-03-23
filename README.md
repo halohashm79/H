@@ -14,6 +14,7 @@
 - [Ssrf](#ssrf)
 - [xxe](#xxe)
 - [rce](#rce)
+- [jsscan](#jsscan)
 
 
 
@@ -1270,5 +1271,16 @@ javascript:alert(fetch
     <user>&xxe;</user>
     <pass>mypass</pass>
 </creds>
+```
+# the end 
+
+--
+### jsscan
+-tool
+
+[SecretFinder](https://github.com/m4ll0k/SecretFinder)
+
+```
+cat {file.txt} | while read url; do python3 SecretFinder/SecretFinder.py  -i $url -o cli; done
 ```
 
