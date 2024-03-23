@@ -1284,7 +1284,7 @@ javascript:alert(fetch
 
 --way 1
 ```
-cat {file.txt} | while read url; do python3 SecretFinder/SecretFinder.py  -i $url -o cli; done
+cat file.txt | while read url; do python3 SecretFinder/SecretFinder.py  -i $url -o cli; done
 ```
 ```
 python3 maps_api_scaner.py
@@ -1293,5 +1293,11 @@ python3 maps_api_scaner.py
 --way 2 
 
 ```
-cat domain.txt|gau|grep " .js" |tee urljs.txt|httpx -mc 200 |tee urljsfind.txt |nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
+cat domain.txt|gau|grep " .js" |tee urljs.txt
+```
+```
+cat urljs.txt|httpx -mc 200 |tee urljsfind.txt
+```
+```
+nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ```
