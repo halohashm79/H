@@ -1280,7 +1280,14 @@ javascript:alert(fetch
 
 [SecretFinder](https://github.com/m4ll0k/SecretFinder)
 
+-[scanapi](https://github.com/ozguralp/gmapsapiscanner)
+
+--way 1
 ```
 cat {file.txt} | while read url; do python3 SecretFinder/SecretFinder.py  -i $url -o cli; done
+```
+```
+python3 maps_api_scaner.py
+
 ```
 
