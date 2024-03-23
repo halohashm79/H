@@ -15,6 +15,7 @@
 - [xxe](#xxe)
 - [rce](#rce)
 - [jsscan](#jsscan)
+- [API info](#apiinfo)
 
 
 
@@ -1305,3 +1306,11 @@ cat url.txt|httpx -mc 200 |tee urljs.txt
 ```
 nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ```
+# the end 
+
+
+
+
+### apiinfo
+
+-[GitHub](https://github.com/streaak/keyhacks)
