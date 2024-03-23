@@ -1312,5 +1312,9 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 
 
 ### apiinfo
-
+--tool
 -[GitHub](https://github.com/streaak/keyhacks)
+
+-[info](https://exploit-notes.hdks.org/exploit/web/api/)
+
+-[hacktrick](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/web-api-pentesting)
