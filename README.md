@@ -1293,10 +1293,14 @@ python3 maps_api_scaner.py
 --way 2 
 
 ```
-cat domain.txt|gau|grep " .js" |tee urljs.txt
+echo "exam.com" |gau |a.txt
+
 ```
 ```
-cat urljs.txt|httpx -mc 200 |tee urljsfind.txt
+cat a.txt |grep " .js" |tee url.txt
+```
+```
+cat url.txt|httpx -mc 200 |tee urljs.txt
 ```
 ```
 nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
