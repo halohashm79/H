@@ -1290,4 +1290,8 @@ cat {file.txt} | while read url; do python3 SecretFinder/SecretFinder.py  -i $ur
 python3 maps_api_scaner.py
 
 ```
+--way 2 
 
+```
+cat domain.txt|gau|grep " .js" |tee urljs.txt|httpx -mc 200 |tee urljsfind.txt |nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
+```
