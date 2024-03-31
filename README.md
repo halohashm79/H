@@ -1285,6 +1285,10 @@ javascript:alert(fetch
 
 --
 ### jsscan
+
+-[tools](https://github.com/h4x0r-dz/Leaked-Credentials/?fbclid=IwAR0eLLsq-o8AjFhp-9jPnfhcOT8LJfWMf5138mdpGxzchmdoeoTP_7zseL0)
+
+
 -tool
 
 [SecretFinder](https://github.com/m4ll0k/SecretFinder)
