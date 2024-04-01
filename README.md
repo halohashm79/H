@@ -961,6 +961,10 @@ python3 -c 'import pty;pty.spawn("/bin/sh")'
 
 ### xss
 -tool 
+
+-[video benefits](https://youtu.be/K_gGnExCmpM?si=VMzwllaLFpINJutg)
+
+-
 [xsstrike to find common source ](https://github.com/s0md3v/XSStrike) 
 >-
 >[dalfox](https://github.com/hahwul/dalfox)
