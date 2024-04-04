@@ -777,6 +777,14 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 
 
 # shellupload
+
+-pash shell esht bawa dabe -below
+-[LINPEAS](https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS)
+
+
+
+
+---
 [automatic shell upload](https://github.com/sAjibuu/Upload_Bypass)
 >and more upload information
 [link](https://exploit-notes.hdks.org/exploit/web/security-risk/file-upload-attack/)
