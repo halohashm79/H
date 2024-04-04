@@ -1200,6 +1200,8 @@ javascript:alert(fetch
 ### ssrf 
 -tool install 
 
+-[youtube ssrf blind](https://youtu.be/DUwH2fuobaw?si=ztUJQABo9uLtEFj4)
+
 [ssrfmap](https://github.com/swisskyrepo/SSRFmap)
 
 -and google dork( pdf_path=)
