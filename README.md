@@ -1343,4 +1343,4 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ### html
 -[youtube](https://youtu.be/nN1ne0KQaow?si=viA8cFVysqpNWLCT)
 
--[youtubr](https://youtu.be/_FUFlAn4iu8?si=K2FwNfu8Skx8jhrx)
+-[youtubr](https://youtu.be/zrU-b5r9JQA?si=eGd73OV_DHR7C-j8)
