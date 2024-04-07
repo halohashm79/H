@@ -19,6 +19,7 @@
 - [html Injection](#html)
 - [hacking after openPort](#OpenPort)
 - [ssti](#ssti)
+- [dos](#dos)
 
 
 
@@ -1374,4 +1375,6 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ### ssti
 -tool 
 -[tool](https://github.com/Hackmanit/TInjA?tab=readme-ov-file#option-1-prebuilt-binary)
+# the end 
 
+### Dos
