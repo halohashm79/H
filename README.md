@@ -17,7 +17,7 @@
 - [jsscan](#jsscan)
 - [API info](#apiinfo)
 - [html Injection](#html)
-- 
+- [hacking after openPort](#OpenPort)
 
 
 
@@ -1354,3 +1354,12 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 -[youtube](https://youtu.be/nN1ne0KQaow?si=viA8cFVysqpNWLCT)
 
 -[youtubr](https://youtu.be/zrU-b5r9JQA?si=eGd73OV_DHR7C-j8)
+# the end 
+
+
+
+
+-
+### OpenPort
+-web 
+-[web](https://0xma.github.io/hacking/nunchucks_server_side_template_injection.html?fbclid=IwAR3BQtCLl1yz66U3IlA6gbhCjG-kducCaFyLUGDhIhSq5pC71oCKcu_cyB4)
