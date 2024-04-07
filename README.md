@@ -762,6 +762,8 @@ payalod=<?php $dir='.'; $file = scandir($dir); print_r($file); ?>
 # Full Account Takeover via Open Redirection link below
 -[youtube ](https://youtu.be/8q5FAFAhFKE?si=xlwGno_SlaYrC3P5)
 
+-[more](https://thefrogsec.github.io/2024/04/06/How-we-escalated-a-DOM-XSS-to-a-sophisticated-1-click-Account-Takeover-for-8000-Part-1/)
+
 # the end
 ### waf
 >website
