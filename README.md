@@ -18,6 +18,7 @@
 - [API info](#apiinfo)
 - [html Injection](#html)
 - [hacking after openPort](#OpenPort)
+- [ssti](#ssti)
 
 
 
@@ -1363,3 +1364,14 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ### OpenPort
 -web 
 -[web](https://0xma.github.io/hacking/nunchucks_server_side_template_injection.html?fbclid=IwAR3BQtCLl1yz66U3IlA6gbhCjG-kducCaFyLUGDhIhSq5pC71oCKcu_cyB4)
+
+
+
+# the end
+
+
+
+### ssti
+-tool 
+-[tool](https://github.com/Hackmanit/TInjA?tab=readme-ov-file#option-1-prebuilt-binary)
+
