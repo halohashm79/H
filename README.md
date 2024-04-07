@@ -1378,3 +1378,4 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 # the end 
 
 ### Dos
+[Link Paypod](https://github.com/halohashm79/H/blob/main/Xml to lfi)
