@@ -1375,6 +1375,8 @@ nuclei -l urljs.find.txt -t /root/nuclei-templates/http/exposures -o js.txt
 ### ssti
 -tool 
 -[tool](https://github.com/Hackmanit/TInjA?tab=readme-ov-file#option-1-prebuilt-binary)
+
+-[GitHub](https://freedium.cfd/https://infosecwriteups.com/mastering-server-side-template-injection-ssti-a-comprehensive-guide-for-pentesters-4fa5e092f56e)
 # the end 
 
 ### Dos
