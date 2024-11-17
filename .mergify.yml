@@ -1,0 +1,3 @@
+settings:
+  command: "pwd"
+  alert_message: "Alert: {output}"  # Use placeholders for dynamic output
